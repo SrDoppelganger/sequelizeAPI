@@ -21,7 +21,7 @@ export default db.define('book',{
     allowNull: false
   },
   ano:{
-
+    //TODO pensar no melhor tipo de dado
   },
   disponivel:{
     type: Sequelize.BOOLEAN,

@@ -17,13 +17,29 @@ export default db.define('client',{
     allowNull: false,
     unique: true
   },
-  endereco:{
-    
-  },
+  endereco:[{
+    rua:{ 
+      type: Sequelize.STRING,
+      allowNull: false
+    },
+    numero:{
+      type: Sequelize.INTEGER
+    },
+    bairro:{
+      type: Sequelize.STRING,
+      allowNull: false
+    },
+    complemento:{
+      type: Sequelize.STRING
+    }
+  }],
   telefone:{
-
+    type: Sequelize.STRING,
+    allowNull: false
   },
   CPF:{
-
+    type: Sequelize.STRING(11),
+    allowNull: false,
+    unique: true
   }
 })
