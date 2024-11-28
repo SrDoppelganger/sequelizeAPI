@@ -1,23 +1,23 @@
 import { Sequelize } from "sequelize";
 import db from '../db.js';
 
-export default db.define('client',{
+export default db.define('book',{
   id:{
 
   },
-  nome:{
+  titulo:{
 
   },
-  email:{
+  autor:{
 
   },
-  endereco:{
+  genero:{
 
   },
-  telefone:{
+  ano:{
 
   },
-  CPF:{
-    
+  disponivel:{
+
   }
-})
+});
