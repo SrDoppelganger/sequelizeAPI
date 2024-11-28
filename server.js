@@ -8,9 +8,9 @@ app.use(express.json());
 app.use(routes);
 
 db.sync(
-  () => console.log()
+  () => console.log(`Banco de dados conectado: ${process.env.DB_NAME}`)
 );
 
 app.listen(3000, () =>
-  console.log()
+  console.log('servidor iniciado na porta 3000')
 )
